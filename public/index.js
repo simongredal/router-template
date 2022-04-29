@@ -6,7 +6,6 @@ import * as Customers from '/pages/customers.js';
 import * as CustomerRentals from '/pages/customer-rentals.js';
 
 const routes = {
-    // 'url path': 'template name,
     '/': {
         template_name: 'home',
         page_handler: Home.page_handler
