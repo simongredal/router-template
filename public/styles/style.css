@@ -1,0 +1,69 @@
+html {
+    font-size: 14pt;
+}
+.hbox {
+    display: flex;
+    flex-direction: row;
+
+    width: 100%;
+}
+
+.vbox {
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+}
+
+.grow {
+    flex-grow: 1;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+
+.w-1 { width: calc(100% * (1/12)); }
+.w-2 { width: calc(100% * (2/12)); }
+.w-3 { width: calc(100% * (3/12)); }
+.w-4 { width: calc(100% * (4/12)); }
+.w-5 { width: calc(100% * (5/12)); }
+.w-6 { width: calc(100% * (6/12)); }
+.w-7 { width: calc(100% * (7/12)); }
+.w-8 { width: calc(100% * (8/12)); }
+.w-9 { width: calc(100% * (9/12)); }
+.w-10 { width: calc(100% * (10/12)); }
+.w-11 { width: calc(100% * (11/12)); }
+.w-12 { width: calc(100% * (12/12)); }
+
+.constrain-width {
+    max-width: 70rem;
+}
+
+.center {
+    margin-inline: auto;
+}
+
+.navbar {
+    background-color: #555555;
+}
+
+.navbar a, .navbar a:visited {
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+
+    padding: 4pt;
+    font-weight: bolder;
+    font-size: 16pt;
+    color: white;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    background-color: #444;
+    text-decoration: underline;
+}
+
+

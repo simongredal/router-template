@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <link rel="stylesheet" href="/styles/reset.css">
+    <link rel="stylesheet" href="/styles/style.css">
+
+    <script type="module" src="/index.js"></script>
+</head>
+<body class="vbox center constrain-width">
+    <header data-router class="navbar">
+        <nav class="hbox space-between">
+            <a href="/">Home</a>
+            <a href="/page-1">Page 1</a>
+            <a href="/page-2">Page 2</a>
+            <a href="/customers/">Customers</a>
+            <a href="/customers/1">Customer 1</a>
+            <a href="/customers/2">Customer 2</a>
+            <a href="/customers/3/rentals/5">Customer 3 Rental 5</a>
+            <a href="/customers/3/rentals/2">Customer 3 Rental 2</a>
+            <a href="https://www.google.com/" target="_blank">External</a>
+        </nav>
+    </header>
+    <main class="vbox grow">
+
+    </main>
+    <footer class="vbox">
+        <p>You can also write things down here</p>
+    </footer>
+</body>
+
+<template data-template="home">
+    <p>This is the "Home" page</p>
+</template>
+
+<template data-template="page1">
+    <p>This is the "Page 1" page</p>
+</template>
+
+<template data-template="page2">
+    <div class="hbox">
+        <div class="vbox">
+            <p>This is the "Page 2" page</p>
+        </div>
+        <div class="vbox">
+            <p>This is the "Page 2" page</p>
+        </div>
+    </div>
+</template>
+
+<template data-template="customers">
+    <p>This is the "Customers" page</p>
+    <p id="to_be_updated">This text should be replaced with the path parameter</p>
+</template>
+
+<template data-template="customer-rentals">
+    <p>This is the "Customer Rentals" page</p>
+    <p id="to_be_updated">This text should be replaced with the path parameter</p>
+</template>
+
+</html>
